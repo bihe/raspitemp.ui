@@ -20,7 +20,7 @@
     // display the dweets of the last 12 hours
     var now = moment();
     var start = moment();
-    start.subtract(1, 'hours');
+    start.subtract(4, 'hours');
     
     var info = 'Will display data from <b>' + start.format('DD.MM.YYYY HH:mm:ss') + '</b> to <b>' + now.format('DD.MM.YYYY HH:mm:ss') + '</b> (update interval ' + (interval/1000) + ' seconds)';
     $('#subtext').html(info);
